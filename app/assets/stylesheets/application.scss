@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+// 将footer置于底部
+
+html{height:100%;}
+body{min-height:100%;margin:0;padding:0;position:relative;}
+
+header{background-color: #000000;}
+main{padding-bottom:100px;background-color: #000000;}/* main的padding-bottom值要等于或大于footer的height值 */
+footer{position:absolute;bottom:0;width:100%;height:100px;background-color: #FFFFFF;}
